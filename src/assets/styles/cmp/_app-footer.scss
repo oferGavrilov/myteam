@@ -1,0 +1,78 @@
+.app-footer {
+    height: 396px;
+    padding: 0;
+
+    .header {
+        display: flex;
+        justify-content: space-between;
+        height: 200px;
+        background-color: $footer-bg-color;
+        padding-right: 261px;
+        padding-left: 261px;
+        align-items: center;
+
+        .title {
+            font-size: 48px;
+            color: #012f34;
+            line-height: 48px;
+            font-weight: 700;
+        }
+
+        button {
+            border-radius: em(24px);
+            background-color: inherit;
+            border: 2px solid #012f34;
+            padding: 8px 20px;
+        }
+    }
+
+    .footer-info {
+        background-color: #002529;
+        height: 196px;
+        color: white;
+        padding-top: 45px;
+        padding-bottom: 45px;
+        display: flex;
+        justify-content: space-between;
+
+        .team-info {
+            justify-content: center;
+
+            .my-team {
+                margin-right: 120px;
+
+                .title {
+                    font-size: 36px;
+                    font-weight: 600;
+                }
+
+                .page-links {
+                    justify-content: space-between;
+                }
+            }
+
+            .team-about {
+                flex-direction: column;
+                font-size: 15px;
+                opacity: .6;
+            }
+        }
+
+        .social-links {
+            flex-direction: column;
+            justify-content: space-between;
+            .links{
+                justify-content: flex-end;
+            }
+            img {
+                width: 24px;
+            }
+
+            span {
+                font-size: 15px;
+                opacity: .6;
+            }
+        }
+    }
+
+}

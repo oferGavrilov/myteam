@@ -1,0 +1,57 @@
+.team-preview{
+    height: 745px;
+    background-color: $team-preview-bg-color;
+    padding-top: 150px;
+    .team-preview-header{
+        width: 100%;
+        font-weight:700 ;
+        font-size: 48px;
+        text-align: center;
+        padding-bottom: 60px;
+        span{
+            color: #79C8C7;
+        }
+    }
+    .team-preview-content{
+        display: flex;
+        gap: 30px;
+        text-align: center;
+        font-size: 15px;
+        font-weight: 600;
+        .member{
+            height: 313px;
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+            align-items: center;
+            .member-name{
+                color: $member-name-color;
+                font-size: 18px;
+            }
+            .member-job{
+                font-size: 13px;
+                line-height: 18px;
+            }
+            img{
+                border-radius: 50%;
+                width: 62px;
+                border: 2px solid #c4fffe;
+            }
+        }
+    }
+    @include for-mobile-layout() {
+        &{
+            height: 1410px;
+            padding-top: 100px;
+            .team-preview-header{
+                padding-bottom:20px ;
+            }
+            .team-preview-content{
+                flex-direction: column;
+                .member{
+                    height: 280px;
+                }
+            }
+        }
+    }
+}
