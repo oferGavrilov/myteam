@@ -19,10 +19,11 @@
         }
 
         button {
-            border-radius: em(24px);
+            border-radius: em(32px);
             background-color: inherit;
             border: 2px solid #012f34;
             padding: 8px 20px;
+            cursor: pointer;
         }
     }
 
@@ -61,9 +62,11 @@
         .social-links {
             flex-direction: column;
             justify-content: space-between;
-            .links{
+
+            .links {
                 justify-content: flex-end;
             }
+
             img {
                 width: 24px;
             }
@@ -75,4 +78,43 @@
         }
     }
 
+    @include for-mobile-layout() {
+        & {
+            .header {
+                height: 302px;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                gap: 20px;
+
+                .title {
+                    width: 300px;
+                    text-align: center;
+                }
+
+                button {
+                    padding: 6px 32px;
+                    white-space: nowrap;
+                }
+            }
+            .footer-info{
+                height: 432px;
+                flex-direction: column;
+                align-items: center;
+                .footer-info{
+                    flex-direction: column;
+                }
+                .team-info{
+                    flex-direction: column;
+                    .my-team{
+                        margin-right: 0;
+                    }
+                }
+                .social-links{
+                    align-items: center;
+                }
+                
+            }
+        }
+    }
 }
